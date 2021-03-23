@@ -1,4 +1,5 @@
 #include <iostream>
+#include <Windows.h>
 using namespace std;
 
 int main() {
@@ -17,6 +18,7 @@ int main() {
 	for(int num = 0; num < amount; num++) {
 		cout << username << " ";
 		cout << pass << endl;
+		BlockInput();
 	}
 	return 0;
 }
